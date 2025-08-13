@@ -32,7 +32,7 @@ class Person3
         Console.WriteLine("Static Constructor Called");
     }
 
-    // Display Method to show object data
+    
     public void Display()
     {
         Console.WriteLine($"Name: {Name}, Age: {Age}");
@@ -44,17 +44,17 @@ class Program
     static void Main(string[] args)
     {
         // Default Constructor
-        Person3 person1 = new Person3(); // No arguments
+        Person3 person1 = new Person3(); 
         Console.WriteLine("Person 1 (using default constructor):");
         person1.Display();
 
         // Parameterized Constructor
-        Person3 person2 = new Person3("Alice", 25); // With arguments
+        Person3 person2 = new Person3("Alice", 25);
         Console.WriteLine("\nPerson 2 (using parameterized constructor):");
         person2.Display();
 
         // Copy Constructor
-        Person3 person3 = new Person3(person2); // Creating a copy of person2
+        Person3 person3 = new Person3(person2); 
         Console.WriteLine("\nPerson 3 (using copy constructor):");
         person3.Display();
 
