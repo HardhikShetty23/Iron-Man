@@ -1,0 +1,11 @@
+-Write a C# program to accept two numbers and an operation to be handled(+,-,*,/). Raise Divide by Zero exception if denominator has zero value. Raise Format Exception if user inputs a non numeric value. Use a finally block to display Calculation complete message.
+-Write a C# program to read a initial balance of 5000 for a bank account. Ask user for withdrawal amount. Raise a Insufficient Funds Exception if the withdrawal amount is greater than the balance throw custom exception otherwise update and print the new balance.
+-Create a simple library system to maintain list of book ids. If user tries to borrow a book that doesn't exist, throw Book Not Found Exception. Handle this with proper message.
+
+-You are designing a simple Student grading system . Each Student must have marks between 0- 100. If a student enters invalid marks , throw a custom exception Invalid Marks Exception :
+- Create a Class Invalid Marks Exception that inherits from Exception.
+- Has a constructor with message "invalid Marks'"
+- Stores the invalid marks in a property .
+- Has a method Get Error Details which returns a formatted error message.
+In the program class accept Marks from the user. Check if marks > 0 or < 100 throw Invalid Marks Exception. Catch the exception and display error Details.
+Add Another wrongly designed method that auto corrects marks inside the Exception that automatically adjusts marks to the nearest valid range (E.g. :-5 to 0 ,120 to 100).Understand why this a bad practice to include business logic in exception. Find the suitable way to add this auto correct marks logic.
